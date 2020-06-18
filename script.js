@@ -1,5 +1,9 @@
 var date = new Date();
-console.log(date.getHours());
+
+const dateTimeFormat = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'short', day: '2-digit' }) 
+const [{ value: month },,{ value: day },,{ value: year }] = dateTimeFormat .formatToParts(date ) 
+
+$("#currentDay").text(`${day}-${month}-${year }`);
 
 $(".time-block").each(function () {
     var hour = parseInt(this.getAttribute("value"));
@@ -13,6 +17,4 @@ $(".time-block").each(function () {
     else {
         this.classList.add("present");
     }
-
-
 })
