@@ -3,4 +3,4 @@ This is homework 5, a work day scheduler. The scheduler shows a standard work da
 
 An example can be found here: https://tober65.github.io/Work-Day-Scheduler/
 
-<img src="./images/word_day_scheduler_demo.png>
+<img src="./images/word_day_scheduler_demo.png">
